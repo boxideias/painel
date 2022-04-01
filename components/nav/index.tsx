@@ -4,7 +4,7 @@ function Nav() {
   return (
     <CstNav>
       <div className="container">
-        <a className="navbar-brand" href="/index.html">
+        <a className="navbar-brand" href="index.html">
           <img 
             src="img/logo_boxideias.png" 
             alt="Box Ideias - Marketing" 
