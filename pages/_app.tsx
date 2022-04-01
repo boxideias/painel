@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 
 import type { AppProps } from 'next/app'
 

@@ -1,10 +1,12 @@
+import { CstFooter } from "./style"
+
 function Footer() {
   return (
-    <footer className="bg-dark text-white">
+    <CstFooter>
       <div className="container-fluid">
         Powered by BoxIdeias
       </div>
-    </footer>
+    </CstFooter>
   )
 }
 
