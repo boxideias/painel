@@ -1,6 +1,10 @@
 function Footer() {
   return (
-    <div>Footer</div>
+    <footer className="bg-dark text-white">
+      <div className="container-fluid">
+        Powered by BoxIdeias
+      </div>
+    </footer>
   )
 }
 

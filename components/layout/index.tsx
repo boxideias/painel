@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Nav from './nav'
-import Footer from './footer'
+import Nav from '../nav'
+import Footer from '../footer'
 
 function Layout( {children}:any ) {
   return (
@@ -11,7 +11,9 @@ function Layout( {children}:any ) {
         <link rel="icon" href="/favicon.ico" />
     </Head>
     <Nav />
-    <div> {children} </div>
+    <main className='container'>
+      {children}
+    </main>
     <Footer />
     </>
   )
