@@ -1,6 +1,21 @@
-import { AnalysisClient, AnaylsisStyle, Dashboard } from './style'
+import type { NextPage } from 'next'
+import styled from 'styled-components'
 
-function Clients() {
+export const Dashboard = styled.div`
+    height: 100vh;
+    margin-bottom: 10px;
+`
+
+export const AnaylsisStyle = styled.div`
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #fefefe;
+  border-radius: 4px;
+  border: 1px solid #dbdbdb;
+  box-shadow: 0 2px 3px 0 #c5c5c5;
+`
+
+const Clients: NextPage = () => {
   return (
     <>
       <Dashboard>
