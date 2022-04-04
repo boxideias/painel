@@ -1,12 +1,14 @@
 import Nav from './nav'
-import Footer from './footer'
 import CustomHead from './CustomHead'
 import styled from 'styled-components'
 
-export const GlobalStyle = styled.main`
-  min-height: 85vh;
-  margin-top: 1vh;
-  margin-bottom: 1vh;
+export const GlobalStyle = styled.div`
+    background: #333;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+  main{
+    min-height: 85vh;
+  }
 `
 
 function Layout( {children}: {children: any} ) {
@@ -15,11 +17,11 @@ function Layout( {children}: {children: any} ) {
     <CustomHead />
     <Nav />
 
-    <GlobalStyle className='container'>
-      {children}
+    <GlobalStyle>
+      <main className='container'>
+        {children}
+      </main>
     </GlobalStyle>
-
-    <Footer />
     </>
   )
 }

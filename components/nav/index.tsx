@@ -6,7 +6,7 @@ function Nav() {
       <div className="container">
         <a className="navbar-brand" href="index.html">
           <img 
-            src="img/logo_boxideias.png" 
+            src="/img/logo_boxideias.png" 
             alt="Box Ideias - Marketing" 
             height="50px" 
           />
