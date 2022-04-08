@@ -1,8 +1,8 @@
 import type { NextApiResponse } from 'next'
-import { people } from '../../../data'
+import { reports } from '../../../data'
 
 export default function personHandler({ query: { id } }:any, res:NextApiResponse) {
-  const filtered = people.filter((p) => p.id === id)
+  const filtered = reports.filter((r) => r.id === id)
 
   // User with id exists
   if (filtered.length > 0) {

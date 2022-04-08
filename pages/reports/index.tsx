@@ -3,8 +3,12 @@ import useSWR from 'swr'
 const fetcher = (url:any) => fetch(url).then((res) => res.json())
 
 export interface ReportProps {
-  id: number,
-  name: string
+  id:number,
+  client: string,
+  date: string,
+  title: string,
+  pdf_url: string,
+  dashboard_url: string
 }
 
 export default function Index() {
@@ -15,9 +19,10 @@ export default function Index() {
 
   return (
     <ul>
-      {data.map((p:ReportProps) => (
-        <div key={p.id}>
-            {p.name}
+      {data.map((r:ReportProps) => (
+        <div key={r.id}>
+            <h1>{r.client}</h1>
+            <p> {r.title} </p>
         </div>
       ))}
     </ul>
