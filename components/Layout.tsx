@@ -4,9 +4,9 @@ import styled from 'styled-components'
 
 const LayoutStyled = styled.div`
   background: #333;
-  padding-top: 0.5vh;
-  padding-bottom: 0.5vh;
-  min-height: 90vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  min-height: 92vh;
 `
 
 function Layout( {children}: {children: any} ) {

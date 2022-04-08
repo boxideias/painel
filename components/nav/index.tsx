@@ -10,7 +10,6 @@ function Nav() {
             <img 
               src="/img/logo_boxideias.png" 
               alt="Box Ideias - Marketing" 
-              height="50px" 
             />
           </a>
         </Link>
