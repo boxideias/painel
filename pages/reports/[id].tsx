@@ -2,16 +2,7 @@ import { useRouter } from 'next/router'
 import styled from 'styled-components'
 import useSWR from 'swr'
 import Link from 'next/link'
-
-const DashboardStyled = styled.section`
-  margin-bottom: 2vh;
-  iframe{
-    width: 100%;
-    height: 750px;
-    border-radius: 4px;
-    border: 0;
-  }
-`
+import Dashboard from '../../components/dashboard'
 
 const AnalysisStyled = styled.section`
   background: #fff;
@@ -26,7 +17,14 @@ const AnalysisStyled = styled.section`
   }
 `
 
-export default function Person() {
+export interface ReportProps{
+  type: string,
+  date_started: string,
+  date_ended: string,
+  report_url: string,
+}
+
+export default function Report() {
   const { query } = useRouter()
   const { data, error } = useSWR(
     () => query.id && `/api/reports/${query.id}`,
@@ -34,34 +32,33 @@ export default function Person() {
   )
 
   if (error) return <div>{error.message}</div>
-  if (!data) return <div>Loading...</div>
+  if (!data) return <div>Carregando...</div>
 
   return (
     <>
-      <DashboardStyled>
-        <iframe
-          title="hypera_dashboard_daily"
-          src={data.dashboard_url}
-          data-allowFullScreen="true"
-        />
-      </DashboardStyled>
+      <Dashboard
+        name={data.name} 
+        dashboard_url={data.dashboard_url}
+      />
 
       <AnalysisStyled>
         <h1> Análise </h1>
         <ul>
-          <li>
-            <span>{data.month} {data.year}: </span>
-            <Link href={`/pdf/${data.pdf_url}`}>
-              <a target='_blank'>Baixe o PDF</a>
-            </Link>
-          </li>
+        {data.reports.map((r:ReportProps, index:number) => (
+        <li key={index}>
+          <span> {(r.type).charAt(0).toUpperCase() + (r.type).slice(1)} ({r.date_started} - {r.date_ended}): </span>
+          <Link href={`/pdf/${r.report_url}`}>
+            <a target='_blank'>Acesse o PDF</a>
+          </Link>
+        </li>
+        ))}
         </ul>
       </AnalysisStyled>
     </>
   )
 }
 
-const fetcher = async (url:any) => {
+const fetcher = async (url:string) => {
   const res = await fetch(url)
   const data = await res.json()
 
