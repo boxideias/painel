@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const CstNav = styled.nav`
   color: #fff;
-  background: #000;
+  background: #222;
   height: 8vh;
   display: flex;
   justify-content: center;
