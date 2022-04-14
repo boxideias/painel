@@ -36,5 +36,35 @@ export const reports = [
         year: 2022,
       }
     ]
+  },
+  {
+    id: "tropicalia",
+    name: "Tropicalia",
+    dashboard_url: "https://app.powerbi.com/reportEmbed?reportId=735b2add-0855-47c1-a483-b5d33ad702a4&autoAuth=true&ctid=d6419d1c-cd2e-4780-a648-3b13d18c79b9&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWJyYXppbC1zb3V0aC1iLXByaW1hcnktcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D",
+    reports:[
+      {
+        report_url: "revest_mensal_4462144651.pdf",
+        date_started: "01/03/2022",
+        date_ended: "31/03/2022",
+        type: "Mensal",
+        month: "Março",
+        year: 2022,
+      }
+    ]
+  },
+  {
+    id: "durval",
+    name: "Durval",
+    dashboard_url: "https://app.powerbi.com/reportEmbed?reportId=8970b9df-0597-4166-9018-ba05bbf354ac&autoAuth=true&ctid=d6419d1c-cd2e-4780-a648-3b13d18c79b9&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWJyYXppbC1zb3V0aC1iLXByaW1hcnktcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D",
+    reports:[
+      {
+        report_url: "revest_mensal_4462144651.pdf",
+        date_started: "01/03/2022",
+        date_ended: "31/03/2022",
+        type: "Mensal",
+        month: "Março",
+        year: 2022,
+      }
+    ]
   }
 ]
