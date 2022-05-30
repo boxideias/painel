@@ -41,7 +41,7 @@ export default function Report() {
         dashboard_url={data.dashboard_url}
       />
 
-      <AnalysisStyled>
+      {/* <AnalysisStyled>
         <h1> Análise </h1>
         <ul>
         {data.reports.map((r:ReportProps, index:number) => (
@@ -53,7 +53,7 @@ export default function Report() {
         </li>
         ))}
         </ul>
-      </AnalysisStyled>
+      </AnalysisStyled> */}
     </>
   )
 }
