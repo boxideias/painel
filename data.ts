@@ -81,5 +81,20 @@ export const reports = [
         year: 2022,
       }
     ]
+  },
+  {
+    id: "omnichannel",
+    name: "hypera_omnichannel",
+    dashboard_url: "https://app.powerbi.com/reportEmbed?reportId=98634b8e-acb8-467b-89eb-f0000544da33&autoAuth=true&ctid=d6419d1c-cd2e-4780-a648-3b13d18c79b9&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWJyYXppbC1zb3V0aC1iLXByaW1hcnktcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D",
+    reports:[
+      {
+        report_url: "r.pdf",
+        date_started: "01/03/2022",
+        date_ended: "31/03/2022",
+        type: "Mensal",
+        month: "Abril",
+        year: 2022,
+      }
+    ]
   }
 ]
