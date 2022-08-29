@@ -4,7 +4,7 @@ import {CstNav} from './style'
 function Nav() {
   return (
     <CstNav>
-      <div className="container">
+      <div className="container-fluid">
         <Link href='/'>
           <a className="navbar-brand">
             <img 

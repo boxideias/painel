@@ -3,7 +3,7 @@ import CustomHead from './CustomHead'
 import styled from 'styled-components'
 
 const LayoutStyled = styled.div`
-  background: #222;
+  background: #fff;
   padding-top: 2vh;
   padding-bottom: 2vh;
   min-height: 92vh;
@@ -16,7 +16,7 @@ function Layout( {children}: {children: any} ) {
     <Nav />
 
     <LayoutStyled>
-      <main className='container'>
+      <main className='container-fluid'>
         {children}
       </main>
     </LayoutStyled>
