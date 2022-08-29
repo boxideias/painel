@@ -3,7 +3,7 @@ import CustomHead from './CustomHead'
 import styled from 'styled-components'
 
 const LayoutStyled = styled.div`
-  background: #fff;
+  background: #EAEAEA;
   padding-top: 2vh;
   padding-bottom: 2vh;
   min-height: 92vh;
