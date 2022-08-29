@@ -16,7 +16,7 @@ function Layout( {children}: {children: any} ) {
     <Nav />
 
     <LayoutStyled>
-      <main className='container-fluid'>
+      <main className='container'>
         {children}
       </main>
     </LayoutStyled>
