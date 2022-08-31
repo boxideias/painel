@@ -25,7 +25,7 @@ export const reports = [
   {
     id: "h2",
     name: "h",
-    dashboard_url: "https://app.powerbi.com/view?r=eyJrIjoiMmMxMTAzODItODIwOC00N2FkLTgxMTEtMDI2MTU3OTAzMjQyIiwidCI6ImQ2NDE5ZDFjLWNkMmUtNDc4MC1hNjQ4LTNiMTNkMThjNzliOSJ9",
+    dashboard_url: "https://app.powerbi.com/reportEmbed?reportId=9ccfaf13-14af-4889-8445-3440758a8263&autoAuth=true&ctid=d6419d1c-cd2e-4780-a648-3b13d18c79b9",
     reports: [
       {
         report_url: "h.pdf",
