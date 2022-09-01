@@ -8,7 +8,7 @@ function Nav() {
         <Link href='/'>
           <a className="navbar-brand">
             <img 
-              src="/img/logo_boxideias.png" 
+              src="/img/icon_boxideias.png" 
               alt="Box Ideias - Marketing" 
             />
           </a>

@@ -3,10 +3,10 @@ import CustomHead from './CustomHead'
 import styled from 'styled-components'
 
 const LayoutStyled = styled.div`
+  height: 100vh;
   background: #EAEAEA;
-  padding-top: 2vh;
-  padding-bottom: 2vh;
-  min-height: 92vh;
+  display: grid;
+  place-items: center;
 `
 
 function Layout( {children}: {children: any} ) {

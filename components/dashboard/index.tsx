@@ -11,7 +11,7 @@ export default function Dashboard( props:DashboardProps ) {
         <iframe
           title={props.name}
           src={props.dashboard_url}
-          data-allowFullScreen="true"
+          data-allowFullScreen={true}
         />
     </Container>
   )
