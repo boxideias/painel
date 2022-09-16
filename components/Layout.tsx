@@ -13,8 +13,6 @@ function Layout( {children}: {children: any} ) {
   return (
     <>
     <CustomHead />
-    <Nav />
-
     <LayoutStyled>
       <main className='container'>
         {children}
