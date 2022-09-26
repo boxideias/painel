@@ -106,9 +106,9 @@ export const reports = [
     ]
   },
   {
-    id: "omnichannel",
+    id: "hypera_omnichannel",
     name: "hypera_omnichannel",
-    dashboard_url: "https://app.powerbi.com/reportEmbed?reportId=98634b8e-acb8-467b-89eb-f0000544da33&autoAuth=true&ctid=d6419d1c-cd2e-4780-a648-3b13d18c79b9&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWJyYXppbC1zb3V0aC1iLXByaW1hcnktcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D",
+    dashboard_url: "https://app.powerbi.com/view?r=eyJrIjoiMmIwMDRmZDItNDEyNS00ZGIzLWJkZDktOWRhYWQ1N2IzMzc2IiwidCI6ImQ2NDE5ZDFjLWNkMmUtNDc4MC1hNjQ4LTNiMTNkMThjNzliOSJ9",
     reports:[
       {
         report_url: "r.pdf",
